@@ -1,0 +1,18 @@
+﻿<process name="Output Parameter demo from sub-pages to main pages" version="1.0" bpversion="6.9.0.26970" narrative="The process is main purpose to have the output parameter in the studio." byrefcollection="true" preferredid="3df2212d-4067-425b-a402-5aae90cfc00b">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="e4e4dee7-d785-4ab6-8142-2219b084813e" name="Start" type="Start">
+    <display x="15" y="-105" />
+  </stage>
+  <stage stageid="aabc517f-4bcb-44ac-9110-a00cd5a81960" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="c7a5677e-e392-4512-965a-6b2ceb51786f" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+</process>

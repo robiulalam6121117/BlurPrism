@@ -1,0 +1,98 @@
+﻿<process name="Notepad Append Test" version="1.0" bpversion="6.9.0.26970" narrative="The process has been created for writing into Notepad." byrefcollection="true" preferredid="3d131b95-72ee-467b-9a0e-1ab003484d18">
+  <view>
+    <camerax>0</camerax>
+    <cameray>-84</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="4e7ac793-84e0-4100-8251-ffa086a1502f" name="Start" type="Start">
+    <display x="15" y="-165" />
+    <onsuccess>b99b68af-fdad-4958-9a13-8cde89022dcf</onsuccess>
+  </stage>
+  <stage stageid="01bf01c1-3aec-47f3-ac52-f54de39798a8" name="End" type="End">
+    <display x="15" y="180" />
+  </stage>
+  <stage stageid="cc315fd3-e2ac-4fde-af45-7f64e56ea958" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="ab8b06e0-f85b-4280-abf4-b571766a1677" name="Append the Text" type="Action">
+    <display x="15" y="-30" />
+    <inputs>
+      <input type="text" name="File Name" friendlyname="File Name" narrative="The full path of the text file to append to" expr="&quot;C:\Users\robiu\OneDrive\Desktop\BluePrism\CloudFoundation\sample.txt&quot;" />
+      <input type="text" name="Text" friendlyname="Text" narrative="The text to append to the file" expr="[Input Data.Input] &amp; &quot;'''''&quot;&quot;''''''&quot; &amp; [Input Data.Name]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" friendlyname="Success" narrative="True if successful" stage="" />
+      <output type="text" name="Message" friendlyname="Message" narrative="An error message if unsuccessful" stage="" />
+    </outputs>
+    <onsuccess>5801fd67-87fc-47cc-b2fa-4ab6bb3de959</onsuccess>
+    <resource object="Utility - File Management" action="Append to Text File" />
+  </stage>
+  <stage stageid="948bf048-5fd0-4995-9ba9-4382f82abdd4" name="Input Data" type="Collection">
+    <display x="285" y="-60" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Input" type="number" />
+      <field name="Name" type="text" />
+      <field name="satus" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="Input" type="number" value="1000" />
+        <field name="Name" type="text" value="John" />
+        <field name="satus" type="text" value="" />
+      </row>
+      <row>
+        <field name="Input" type="number" value="1001" />
+        <field name="Name" type="text" value="Vincent" />
+        <field name="satus" type="text" value="" />
+      </row>
+      <row>
+        <field name="Input" type="number" value="1002" />
+        <field name="Name" type="text" value="David" />
+        <field name="satus" type="text" value="" />
+      </row>
+      <row>
+        <field name="Input" type="number" value="1003" />
+        <field name="Name" type="text" value="Michael" />
+        <field name="satus" type="text" value="" />
+      </row>
+      <row>
+        <field name="Input" type="number" value="1004" />
+        <field name="Name" type="text" value="George" />
+        <field name="satus" type="text" value="" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="b99b68af-fdad-4958-9a13-8cde89022dcf" name="Loop Start1" type="LoopStart">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-90" />
+    <onsuccess>ab8b06e0-f85b-4280-abf4-b571766a1677</onsuccess>
+    <groupid>c3892ad4-433c-4c9a-9f12-6493fb0ef3a1</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Input Data</loopdata>
+  </stage>
+  <stage stageid="5f491c65-af7f-4cf4-b5d4-af522f34ba53" name="Loop End1" type="LoopEnd">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="105" />
+    <onsuccess>01bf01c1-3aec-47f3-ac52-f54de39798a8</onsuccess>
+    <groupid>c3892ad4-433c-4c9a-9f12-6493fb0ef3a1</groupid>
+  </stage>
+  <stage stageid="5801fd67-87fc-47cc-b2fa-4ab6bb3de959" name="Calc1" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="45" />
+    <onsuccess>5f491c65-af7f-4cf4-b5d4-af522f34ba53</onsuccess>
+    <calculation expression="[Input Data.Name]" stage="Intrim Value" />
+  </stage>
+  <stage stageid="6fa895eb-a3e7-41f3-900b-bfbd83826a93" name="Intrim Value" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="285" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

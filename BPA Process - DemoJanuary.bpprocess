@@ -1,0 +1,76 @@
+﻿<process name="DemoJanuary" version="1.0" bpversion="6.9.0.26970" narrative="The Blue Prism of Cloud Foundation has been introduced in the Demo process of the second process." byrefcollection="true" preferredid="3640597d-5872-4055-9772-6e06fda89255">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="985f3664-f777-46a3-8574-d76b9cfce59d" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>83264fd6-4ba6-4fef-99b7-1af3def1e122</onsuccess>
+  </stage>
+  <stage stageid="37b7e6d7-886b-4cf7-8079-81974e5c60af" name="End" type="End">
+    <display x="15" y="195" />
+  </stage>
+  <stage stageid="ce7722b7-607b-479e-a4f0-ae70445dbb70" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="9cb936af-3e2e-4824-8aea-71a1101da0b2" name="x" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-420" y="-60" />
+    <datatype>number</datatype>
+    <initialvalue>12</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0148b0cd-686b-443a-b06b-a781c38ec999" name="y" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-420" y="0" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="83264fd6-4ba6-4fef-99b7-1af3def1e122" name="Subtraction Panel" type="Calculation">
+    <display x="15" y="-30" />
+    <onsuccess>63b2f367-3ab7-49f7-b258-9b98562ddd7c</onsuccess>
+    <calculation expression="[x]-[y]" stage="Results" />
+  </stage>
+  <stage stageid="3b93564f-341d-4c62-80b3-84fa0a58db1a" name="Results" type="Data">
+    <display x="-435" y="60" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="63b2f367-3ab7-49f7-b258-9b98562ddd7c" name="Is Result valid?" type="Decision">
+    <display x="15" y="45" />
+    <decision expression="[Results] &lt; 0" />
+    <ontrue>5effb092-a97e-40c4-8e14-f7ccf54499bf</ontrue>
+    <onfalse>f5df6805-9deb-495f-95b5-5c8d95a9b19a</onfalse>
+  </stage>
+  <stage stageid="28fbb95e-3d7e-4bb4-bdd6-84a1c94acf35" name="End1" type="End">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="45" />
+  </stage>
+  <stage stageid="f5df6805-9deb-495f-95b5-5c8d95a9b19a" name="Decision Result" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="45" />
+    <onsuccess>28fbb95e-3d7e-4bb4-bdd6-84a1c94acf35</onsuccess>
+    <calculation expression="&quot;Result is Valid&quot;" stage="Decision Result" />
+  </stage>
+  <stage stageid="5effb092-a97e-40c4-8e14-f7ccf54499bf" name="Result is not valid" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="135" />
+    <onsuccess>37b7e6d7-886b-4cf7-8079-81974e5c60af</onsuccess>
+    <calculation expression="&quot;Result is not valid&quot;" stage="Decision Result" />
+  </stage>
+  <stage stageid="2495f1a4-e58b-4e64-9b05-33b1adffabbb" name="Decision Result" type="Data">
+    <display x="-240" y="45" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

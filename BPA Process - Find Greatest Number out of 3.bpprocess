@@ -1,0 +1,121 @@
+﻿<process name="Find Greatest Number out of 3" version="1.0" bpversion="6.9.0.26970" narrative="we have to find the greateds number out of 3." byrefcollection="true" preferredid="701d9a2b-d0ff-462c-b15c-51fd57cd81ce">
+  <view>
+    <camerax>0</camerax>
+    <cameray>-21</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="50253cb6-70df-4cf2-b504-ac6d0fb557f2" name="Start" type="Start">
+    <display x="-30" y="-135" />
+    <onsuccess>625d144d-043c-4208-86eb-30587075c8ea</onsuccess>
+  </stage>
+  <stage stageid="4cb2a656-38c2-4efe-bada-e2bff5f9866a" name="End" type="End">
+    <display x="-30" y="180" />
+  </stage>
+  <stage stageid="33e2a922-3729-4796-8207-62067ca44449" name="Stage1" type="ProcessInfo">
+    <display x="-285" y="-135" w="150" h="90" />
+  </stage>
+  <stage stageid="41573104-a8bb-424a-b86c-ca940e4bd9bb" name="A" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="300" y="-75" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="244e220b-1eb3-4df9-afe9-4f7942a52bd1" name="B" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="285" y="-30" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="93547f79-70be-4f1a-8a58-f71518014c23" name="C" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="15" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="625d144d-043c-4208-86eb-30587075c8ea" name="A&gt;B?" type="Decision">
+    <display x="-30" y="-60" />
+    <decision expression="[A] &gt; [B]" />
+    <ontrue>b1492161-779d-4c2e-ad44-0bffad1c56ba</ontrue>
+    <onfalse>519b94b1-8ff6-4f66-8da8-de93df0fa1ef</onfalse>
+  </stage>
+  <stage stageid="96173057-dc23-49a8-bc42-dc0524878cfe" name="A&gt;C?" type="Decision">
+    <display x="-120" y="-15" />
+    <decision expression="[A] &gt; [C]" />
+    <ontrue>3b6f6612-23d8-493b-81ab-e16d2f1c67bd</ontrue>
+    <onfalse>20bd2b56-4b8c-467e-a366-6a774ba9e025</onfalse>
+  </stage>
+  <stage stageid="be98fde1-43ba-4e51-b294-b39ed06d6620" name="B&gt;C?" type="Decision">
+    <display x="105" y="-15" />
+    <decision expression="[B] &gt; [C]" />
+    <ontrue>dbc87df7-99c3-4b03-a102-138bc9c5b3e7</ontrue>
+    <onfalse>183c1ae1-cc8e-4cb9-8a65-9fd92229b7c6</onfalse>
+  </stage>
+  <stage stageid="56029f12-a067-411a-ab0a-92aad87a9ff3" name="A is Greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="-180" y="60" />
+    <onsuccess>fa5d2680-ab89-4d72-a2f8-8e4f1115adef</onsuccess>
+    <calculation expression="&quot;A is greater&quot;" stage="Result" />
+  </stage>
+  <stage stageid="7e802b07-9956-4583-99ad-9833b6835b93" name="C is greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="-30" y="60" />
+    <onsuccess>4cb2a656-38c2-4efe-bada-e2bff5f9866a</onsuccess>
+    <calculation expression="&quot;C is greater&quot;" stage="Result" />
+  </stage>
+  <stage stageid="bdfbab6f-cf56-4a37-92f6-90ffa7b2a5af" name="Result" type="Data">
+    <display x="300" y="75" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dbc87df7-99c3-4b03-a102-138bc9c5b3e7" name="B is greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="60" />
+    <onsuccess>085ad7b5-0a4d-4b72-ad1f-c09dd6ca2ec6</onsuccess>
+    <calculation expression="&quot;B is greater&quot;" stage="Result" />
+  </stage>
+  <stage stageid="519b94b1-8ff6-4f66-8da8-de93df0fa1ef" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="-60" w="10" h="10" />
+    <onsuccess>be98fde1-43ba-4e51-b294-b39ed06d6620</onsuccess>
+  </stage>
+  <stage stageid="b1492161-779d-4c2e-ad44-0bffad1c56ba" name="Anchor2" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-120" y="-60" w="10" h="10" />
+    <onsuccess>96173057-dc23-49a8-bc42-dc0524878cfe</onsuccess>
+  </stage>
+  <stage stageid="3b6f6612-23d8-493b-81ab-e16d2f1c67bd" name="Anchor3" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-180" y="-15" w="10" h="10" />
+    <onsuccess>56029f12-a067-411a-ab0a-92aad87a9ff3</onsuccess>
+  </stage>
+  <stage stageid="fa5d2680-ab89-4d72-a2f8-8e4f1115adef" name="Anchor4" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-180" y="180" w="10" h="10" />
+    <onsuccess>4cb2a656-38c2-4efe-bada-e2bff5f9866a</onsuccess>
+  </stage>
+  <stage stageid="085ad7b5-0a4d-4b72-ad1f-c09dd6ca2ec6" name="Anchor5" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="180" w="10" h="10" />
+    <onsuccess>4cb2a656-38c2-4efe-bada-e2bff5f9866a</onsuccess>
+  </stage>
+  <stage stageid="20bd2b56-4b8c-467e-a366-6a774ba9e025" name="Anchor6" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-30" y="-15" w="10" h="10" />
+    <onsuccess>7e802b07-9956-4583-99ad-9833b6835b93</onsuccess>
+  </stage>
+  <stage stageid="183c1ae1-cc8e-4cb9-8a65-9fd92229b7c6" name="Anchor7" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-15" y="-15" w="10" h="10" />
+    <onsuccess>7e802b07-9956-4583-99ad-9833b6835b93</onsuccess>
+  </stage>
+</process>

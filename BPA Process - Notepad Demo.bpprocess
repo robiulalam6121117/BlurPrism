@@ -1,0 +1,41 @@
+﻿<process name="Notepad Demo" version="1.0" bpversion="6.9.0.26970" narrative="" byrefcollection="true" preferredid="57269a34-517e-4f1e-9f90-61c8cabba68c">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="221552ab-9667-48d7-a6cd-0d2063e7aa45" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>ff1d0f3b-78ab-4c22-834c-0a630669057c</onsuccess>
+  </stage>
+  <stage stageid="732ea659-2c54-433a-a9b7-35f0da4f57a2" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="3da28df5-d638-4b7f-8a79-41fda19e4711" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="ff1d0f3b-78ab-4c22-834c-0a630669057c" name="Launch" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>041f4d79-07bb-432e-84ff-5e1e8d805b74</onsuccess>
+    <resource object="Notepad VBO" action="Launch" />
+  </stage>
+  <stage stageid="041f4d79-07bb-432e-84ff-5e1e8d805b74" name="Write text to Notepad" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="text" name="Input Text" friendlyname="Input Text" expr="[Input Text]" />
+    </inputs>
+    <onsuccess>732ea659-2c54-433a-a9b7-35f0da4f57a2</onsuccess>
+    <resource object="Notepad VBO" action="Write" />
+  </stage>
+  <stage stageid="7a0178a1-848d-4e58-a80a-9da033e57206" name="Input Text" type="Data">
+    <display x="285" y="-30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">hello world</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

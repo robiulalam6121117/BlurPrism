@@ -1,0 +1,74 @@
+﻿<process name="Multi Calculation Process" version="1.0" bpversion="6.9.0.26970" narrative="this is lesseon 6 of cloud Foundation 2018." byrefcollection="true" preferredid="92ae3ed3-a20a-4002-8526-89e669a155e4">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="66c5fe32-ad6f-43b6-bcac-9a9b4d33a5b0" name="Start" type="Start">
+    <display x="15" y="-135" />
+    <onsuccess>16485803-ad2f-42ab-9860-d4d20c556c11</onsuccess>
+  </stage>
+  <stage stageid="e1c6bd44-bc2c-4296-a6fe-caf021f01cd0" name="End" type="End">
+    <display x="15" y="135" />
+  </stage>
+  <stage stageid="64d5b407-6bb1-4c29-9a0c-db259f4d5f4b" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="b3e1cfc2-ee49-4b09-85c6-7fbea246f100" name="Adding" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <onsuccess>20484621-f0d5-44c5-aeb7-c9f9f61c9ee0</onsuccess>
+    <calculation expression="[X] + [Y]" stage="Z" />
+  </stage>
+  <stage stageid="ec3d5543-8cb0-4558-8714-41697756fe1d" name="X" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="195" y="-90" />
+    <datatype>number</datatype>
+    <initialvalue>12</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="75f9bfe4-ce56-4b43-8bce-30f59478b4bd" name="Y" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="195" y="-30" />
+    <datatype>number</datatype>
+    <initialvalue>15</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="96126e74-0308-46f4-a6a0-2dbac773b900" name="Z" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="45" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="20484621-f0d5-44c5-aeb7-c9f9f61c9ee0" name="Division" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>f4608ae0-b951-494f-9c61-ea8a069eeeef</onsuccess>
+    <calculation expression="[Z] / [X]" stage="Z" />
+  </stage>
+  <stage stageid="f4608ae0-b951-494f-9c61-ea8a069eeeef" name="Is Z valid?" type="Decision">
+    <display x="15" y="75" />
+    <decision expression="[Z] &gt; 2" />
+    <ontrue>9fd43456-70aa-4ad7-9e40-a4e3ec7e2b53</ontrue>
+    <onfalse>e1c6bd44-bc2c-4296-a6fe-caf021f01cd0</onfalse>
+  </stage>
+  <stage stageid="9fd43456-70aa-4ad7-9e40-a4e3ec7e2b53" name="End1" type="End">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="75" />
+  </stage>
+  <stage stageid="16485803-ad2f-42ab-9860-d4d20c556c11" name="Adding and Division" type="MultipleCalculation">
+    <loginhibit onsuccess="true" />
+    <display x="-135" y="-15" />
+    <onsuccess>f4608ae0-b951-494f-9c61-ea8a069eeeef</onsuccess>
+    <steps>
+      <calculation expression="[X]+[Y]" stage="Z" />
+      <calculation expression="[Z]/[X]" stage="Z" />
+    </steps>
+  </stage>
+</process>

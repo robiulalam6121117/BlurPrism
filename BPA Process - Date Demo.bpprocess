@@ -1,0 +1,117 @@
+﻿<process name="Date Demo" version="1.0" bpversion="6.9.0.26970" narrative="The process has been created to process the data variable in the process studio" byrefcollection="true" preferredid="7a73f70c-c680-4333-98c8-a3fecbf1d26b">
+  <view>
+    <camerax>0</camerax>
+    <cameray>38</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="2722c048-6579-4478-9e8f-3195882e13ea" name="Start" type="Start">
+    <display x="15" y="-165" />
+    <onsuccess>3865a3f3-660e-4b1b-b137-4a4c01232223</onsuccess>
+  </stage>
+  <stage stageid="90fc2962-6d29-43e8-9d3c-2a0939170aaa" name="End" type="End">
+    <display x="15" y="240" />
+  </stage>
+  <stage stageid="d31109fc-758a-455b-ba08-7ca582634d81" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="3e32fd77-3455-459d-9958-26eb185faa9d" name="Today are calculation" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-105" />
+    <onsuccess>bad5a5fa-2013-47ca-af92-5a62d5f97690</onsuccess>
+    <calculation expression="Today()" stage="AddDays" />
+  </stage>
+  <stage stageid="75873fee-cc86-4869-98c8-aea10263a60c" name="Today date" type="Data">
+    <display x="-165" y="0" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a16b845a-02f7-4a65-b2c6-b51c923dbf40" name="AddDays" type="Data">
+    <display x="-165" y="45" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bad5a5fa-2013-47ca-af92-5a62d5f97690" name="AddDays" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>2fe33eeb-425c-4193-bc47-f4840c9bd783</onsuccess>
+    <calculation expression="AddDays([Today date], 2)" stage="AddDays" />
+  </stage>
+  <stage stageid="2fe33eeb-425c-4193-bc47-f4840c9bd783" name="MakeDate" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>715db511-292f-4455-a8dc-95f306abd143</onsuccess>
+    <calculation expression="MakeDate(11, 5, 2021)" stage="MakeDate" />
+  </stage>
+  <stage stageid="ee28c190-80d5-4bcc-85bf-d436334eb1ca" name="MakeDate" type="Data">
+    <display x="-240" y="45" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="715db511-292f-4455-a8dc-95f306abd143" name="DateAdd" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <onsuccess>10fa1eec-469d-496f-a020-e6ae34024f46</onsuccess>
+    <calculation expression="DateAdd(5, 4, Today())" stage="Date Add" />
+  </stage>
+  <stage stageid="d0ec2622-9828-4460-9293-922f1d2537d4" name="Date Add" type="Data">
+    <display x="-240" y="0" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="10fa1eec-469d-496f-a020-e6ae34024f46" name="DateDiff" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="135" />
+    <onsuccess>6a080ba5-5b46-4fa2-a019-889818d12f2e</onsuccess>
+    <calculation expression="DateDiff(9, MakeDate(28,2,2000), MakeDate(1,3,2000))" stage="DateDiff" />
+  </stage>
+  <stage stageid="6a080ba5-5b46-4fa2-a019-889818d12f2e" name="FormatDate" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="195" />
+    <onsuccess>90fc2962-6d29-43e8-9d3c-2a0939170aaa</onsuccess>
+    <calculation expression="FormatDate(MakeDate(22,5,2018), &quot;yyyy-MM-dd&quot;)" stage="Formatted Date" />
+  </stage>
+  <stage stageid="f70d1846-029a-4eb0-a105-d8bcd38d7f42" name="Formatted Date" type="Data">
+    <display x="-180" y="90" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2716e9e6-dd35-4e9a-9e59-fd8213557aea" name="DateDiff" type="Data">
+    <display x="-255" y="90" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3865a3f3-660e-4b1b-b137-4a4c01232223" name="Date VBO" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="195" y="-30" />
+    <inputs>
+      <input type="number" name="Month" friendlyname="Month" narrative="The month of the year" expr="&quot;2&quot;" />
+      <input type="number" name="Year" friendlyname="Year" narrative="The year." expr="&quot;2000&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Working Day" friendlyname="Working Day" narrative="The last working day of the month" stage="Last Working Day" />
+    </outputs>
+    <onsuccess>90fc2962-6d29-43e8-9d3c-2a0939170aaa</onsuccess>
+    <resource object="Utility - Date and Time Manipulation" action="Get Last Working Day" />
+  </stage>
+  <stage stageid="f9e0af3f-883d-46c4-8db6-1684e513f5c1" name="Last Working Day" type="Data">
+    <display x="-180" y="135" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

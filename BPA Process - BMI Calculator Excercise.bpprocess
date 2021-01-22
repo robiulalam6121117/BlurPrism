@@ -1,0 +1,148 @@
+﻿<process name="BMI Calculator Excercise" version="1.0" bpversion="6.9.0.26970" narrative="This is a process to provide the BMI calculator." byrefcollection="true" preferredid="1b404f89-03d1-423a-b26e-91b8cd014a2f">
+  <view>
+    <camerax>-143</camerax>
+    <cameray>95</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="c74a78fb-e885-48bd-92b2-dbbec60c5073" name="Start" type="Start">
+    <display x="-315" y="-105" />
+    <onsuccess>f5c442d1-1368-4395-b0d7-7e45ae1ba8df</onsuccess>
+  </stage>
+  <stage stageid="2e0f0e33-46ab-44b8-a389-448d5c2492bc" name="End" type="End">
+    <display x="285" y="210" />
+  </stage>
+  <stage stageid="67cdea78-2d7e-4b5d-a5e1-336ef43c58bf" name="Stage1" type="ProcessInfo">
+    <display x="-495" y="-15" w="150" h="90" />
+  </stage>
+  <stage stageid="fc82f51d-15a0-491f-9f73-07ecef92e9c3" name="Acton Launch Website" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>e2a769d8-db13-46f2-a908-12fa411603e7</onsuccess>
+    <resource object="BMI Calculator VBO" action="Launch" />
+  </stage>
+  <stage stageid="e2a769d8-db13-46f2-a908-12fa411603e7" name="Input Value" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="text" name="Height Unput" friendlyname="Height Unput" expr="[BMI.Height-feet]" />
+      <input type="text" name="Height Unit Input" friendlyname="Height Unit Input" expr="[BMI.Height-Inch]" />
+      <input type="text" name="Weight Input" friendlyname="Weight Input" expr="[BMI.WeIGHT]" />
+      <input type="text" name="Weight Uniit Input" friendlyname="Weight Uniit Input" expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="BMI Result" friendlyname="BMI Result" stage="" />
+    </outputs>
+    <onsuccess>3e3b60a3-965c-4ecc-a0b5-7409eade2750</onsuccess>
+    <resource object="BMI Calculator VBO" action="Write Input" />
+  </stage>
+  <stage stageid="3e3b60a3-965c-4ecc-a0b5-7409eade2750" name="Calculate" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <onsuccess>a3914849-16fe-4e09-a16d-feef6e97d748</onsuccess>
+    <resource object="BMI Calculator VBO" action="Calculate Button" />
+  </stage>
+  <stage stageid="a3914849-16fe-4e09-a16d-feef6e97d748" name="Read BMI" type="Action">
+    <display x="15" y="150" />
+    <onsuccess>0e6ca0ec-e6e8-4882-b1c7-adeb56932f57</onsuccess>
+    <resource object="BMI Calculator VBO" action="Read File" />
+  </stage>
+  <stage stageid="f5c442d1-1368-4395-b0d7-7e45ae1ba8df" name="Create Instance" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="-240" y="-105" />
+    <inputs>
+      <input type="flag" name="Enable Events" friendlyname="Enable Events" narrative="Flag to indicate that events should be enabled / disabled on the attached instance - defaulted to True" expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="handle" friendlyname="handle" narrative="An integer which can be used to identify the created instance in subsequent actions" stage="handle" />
+    </outputs>
+    <onsuccess>733fe928-ddca-4b6f-bf7f-5875f541dae8</onsuccess>
+    <resource object="MS Excel VBO" action="Create Instance" />
+  </stage>
+  <stage stageid="46e3f8ff-25c3-4ab1-8089-e1ebc74129b9" name="handle" type="Data">
+    <display x="-300" y="45" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="733fe928-ddca-4b6f-bf7f-5875f541dae8" name="Open WorkBook" type="Action">
+    <display x="-150" y="-105" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the required workbook should be opened. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="File name" friendlyname="File name" narrative="The path and name of the file which should be opened." expr="&quot;C:\Users\robiu\OneDrive\Desktop\BluePrism\CloudFoundation\BMI.XLSX&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name used by Excel to identify the workbook - usually this is the file name (without the path)." stage="File Name" />
+    </outputs>
+    <onsuccess>00663d58-86d4-438b-b9e4-ffa8c07618fe</onsuccess>
+    <resource object="MS Excel VBO" action="Open Workbook" />
+  </stage>
+  <stage stageid="17ac0cf5-f6d8-4eea-9036-74e3781920ed" name="File Name" type="Data">
+    <display x="-315" y="-15" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="00663d58-86d4-438b-b9e4-ffa8c07618fe" name="Open to Calculation" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="-75" y="-105" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the worksheet which should be retrieved resides. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook which contains the sheet required. The default empty text indicates the currently active workbook on the specified instance." expr="[File Name]" />
+      <input type="text" name="Worksheet Name" friendlyname="Worksheet Name" narrative="The name of the worksheet within the specified workbook which should be written to a collection. The default empty text indicates the currently active worksheet within the specified workbook." expr="&quot;Sheet1&quot;" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Data" friendlyname="Data" narrative="The collection containing the data from the specified worksheet - the column IDs will be gleaned from the first row on the sheet being retrieved." stage="BMI" />
+    </outputs>
+    <onsuccess>38da68a5-e447-4cf7-8af8-72c816c2a7f8</onsuccess>
+    <resource object="MS Excel VBO" action="Get Worksheet As Collection" />
+  </stage>
+  <stage stageid="d1f7ede4-f9e2-4471-8e4e-dc5854775a87" name="BMI" type="Collection">
+    <display x="-300" y="105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="38da68a5-e447-4cf7-8af8-72c816c2a7f8" name="Loop Start1" type="LoopStart">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-105" />
+    <onsuccess>fc82f51d-15a0-491f-9f73-07ecef92e9c3</onsuccess>
+    <groupid>37112d26-930e-4e7c-a54e-2b66bca4a919</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>BMI</loopdata>
+  </stage>
+  <stage stageid="0e6ca0ec-e6e8-4882-b1c7-adeb56932f57" name="Loop End1" type="LoopEnd">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="210" />
+    <onsuccess>0c23cc3e-66d6-404a-8c5d-afeda7e4c710</onsuccess>
+    <groupid>37112d26-930e-4e7c-a54e-2b66bca4a919</groupid>
+  </stage>
+  <stage stageid="0c23cc3e-66d6-404a-8c5d-afeda7e4c710" name="Update Excel" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="210" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the specified collection should be written. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook within which the data should be written. The default empty value indicates the current workbook within the specified instance." expr="[File Name]" />
+      <input type="collection" name="Collection" friendlyname="Collection" narrative="The collection containing the data which should be written to the worksheet." expr="[BMI]" />
+      <input type="text" name="Worksheet Name" friendlyname="Worksheet Name" narrative="The name of the worksheet on which the given data should be written. The default empty value indicates the current sheet within the specified workbook." expr="&quot;Sheet1&quot;" />
+      <input type="text" name="Cell Reference" friendlyname="Cell Reference" narrative="The reference at which the collection should be written." expr="&quot;A2&quot;" />
+      <input type="flag" name="Include Column Names" friendlyname="Include Column Names" narrative="True to indicate that the column names from the collection should be written out as the first row; False to ignore the column names and just write out the data." expr="False" />
+    </inputs>
+    <onsuccess>c5a529a7-a42d-498e-9b9a-ecde0e33ba0b</onsuccess>
+    <resource object="MS Excel VBO" action="Write Collection" />
+  </stage>
+  <stage stageid="c5a529a7-a42d-498e-9b9a-ecde0e33ba0b" name="Save and Close" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="195" y="210" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the workbook which should be closed resides. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook which should be closed." expr="[File Name]" />
+      <input type="flag" name="Save Data" friendlyname="Save Data" narrative="True to save the data before closing the workbook; The default of False will discard any changes before closing the workbook." expr="True" />
+    </inputs>
+    <onsuccess>2e0f0e33-46ab-44b8-a389-448d5c2492bc</onsuccess>
+    <resource object="MS Excel VBO" action="Close Workbook" />
+  </stage>
+</process>

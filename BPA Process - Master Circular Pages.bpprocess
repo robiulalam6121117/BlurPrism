@@ -1,0 +1,47 @@
+﻿<process name="Master Circular Pages" version="1.0" bpversion="6.9.0.26970" narrative="The process has been created to process the master process." byrefcollection="true" preferredid="d386ab32-7a2d-486f-a588-724d849f524f">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="69174d42-5502-42ed-9702-5eed14b5cb91" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>3d47cb58-1ce8-46af-a55d-1cdfa21676a7</onsuccess>
+  </stage>
+  <stage stageid="94048b13-b04a-4c31-a894-9ce7d80749d9" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="89f9530a-be25-45ff-b781-ce069d10285c" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="3d47cb58-1ce8-46af-a55d-1cdfa21676a7" name="Process1" type="Process">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <inputs>
+      <input type="number" name="Iteration" friendlyname="Iteration" expr="[Number of Iteration]" />
+    </inputs>
+    <outputs>
+      <output type="date" name="Output Dates" friendlyname="Output Dates" stage="Future Date" />
+    </outputs>
+    <onsuccess>94048b13-b04a-4c31-a894-9ce7d80749d9</onsuccess>
+    <processid>5fbcb91b-2959-468f-add6-63295e8053fe</processid>
+  </stage>
+  <stage stageid="633b9300-ab2e-40c8-ac23-da05047b9269" name="Number of Iteration" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-75" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="73479a2f-19a1-4759-a054-f098040ef497" name="Future Date" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-15" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>
