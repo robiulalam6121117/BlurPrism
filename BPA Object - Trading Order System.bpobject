@@ -1,0 +1,2269 @@
+﻿<process name="Trading Order System" version="1.0" bpversion="6.9.0.26970" narrative="Trading Order System Application" byrefcollection="true" type="object" runmode="Exclusive" preferredid="7a0c3816-2f76-4956-9076-57f62a394d93">
+  <appdef>
+    <element name="Trading Order System">
+      <id>54d7169f-e6a5-4e65-a929-69c7aa37d726</id>
+      <element name="Sign-in Screen">
+        <id>54af8d1b-6d95-445e-bbce-5d1680e587e1</id>
+        <element name="txt_Staff Number">
+          <id>901ed2fd-ed61-4199-b92b-efd4878c668e</id>
+          <element name="password-txt">
+            <id>08af9821-b5d3-4fc0-b772-7d5f2e8a2b4a</id>
+            <type>Password</type>
+            <basetype>Password</basetype>
+            <datatype>password</datatype>
+            <diagnose>False</diagnose>
+            <attributes>
+              <attribute name="WindowText" inuse="True">
+                <ProcessValue datatype="text" value="" />
+              </attribute>
+              <attribute name="ClassName" inuse="True">
+                <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+              </attribute>
+              <attribute name="CtrlID">
+                <ProcessValue datatype="number" value="0" />
+              </attribute>
+              <attribute name="X">
+                <ProcessValue datatype="number" value="87" />
+              </attribute>
+              <attribute name="Y">
+                <ProcessValue datatype="number" value="47" />
+              </attribute>
+              <attribute name="Width">
+                <ProcessValue datatype="number" value="101" />
+              </attribute>
+              <attribute name="Height">
+                <ProcessValue datatype="number" value="21" />
+              </attribute>
+              <attribute name="Visible" inuse="True">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+              <attribute name="ScreenVisible" inuse="True">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+              <attribute name="Enabled" inuse="True">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+              <attribute name="Active">
+                <ProcessValue datatype="flag" value="False" />
+              </attribute>
+              <attribute name="Ordinal">
+                <ProcessValue datatype="number" value="2" />
+              </attribute>
+              <attribute name="ChildCount">
+                <ProcessValue datatype="number" value="0" />
+              </attribute>
+              <attribute name="AncestorsText">
+                <ProcessValue datatype="text" value="Sign in &lt;UNKNOWN&gt; " />
+              </attribute>
+              <attribute name="AncestorCount">
+                <ProcessValue datatype="number" value="2" />
+              </attribute>
+              <attribute name="TypeName">
+                <ProcessValue datatype="text" value="" />
+              </attribute>
+              <attribute name="ScreenBounds">
+                <ProcessValue datatype="text" value="RECT:274,257,273,370" />
+              </attribute>
+              <attribute name="Style">
+                <ProcessValue datatype="number" value="1442906336" />
+              </attribute>
+              <attribute name="pWindowText">
+                <ProcessValue datatype="text" value="Sign in" />
+              </attribute>
+              <attribute name="pClassName">
+                <ProcessValue datatype="text" value="WindowsForms10.Window" />
+              </attribute>
+              <attribute name="pCtrlID">
+                <ProcessValue datatype="number" value="0" />
+              </attribute>
+              <attribute name="pX">
+                <ProcessValue datatype="number" value="182" />
+              </attribute>
+              <attribute name="pY">
+                <ProcessValue datatype="number" value="182" />
+              </attribute>
+              <attribute name="pWidth">
+                <ProcessValue datatype="number" value="210" />
+              </attribute>
+              <attribute name="pHeight">
+                <ProcessValue datatype="number" value="144" />
+              </attribute>
+              <attribute name="pVisible">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+              <attribute name="pScreenVisible">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+              <attribute name="pEnabled">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+              <attribute name="pActive">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+              <attribute name="pOrdinal">
+                <ProcessValue datatype="number" value="1" />
+              </attribute>
+              <attribute name="pChildCount">
+                <ProcessValue datatype="number" value="5" />
+              </attribute>
+              <attribute name="pStyle">
+                <ProcessValue datatype="number" value="1442906336" />
+              </attribute>
+              <attribute name="MatchIndex" inuse="True">
+                <ProcessValue datatype="number" value="1" />
+              </attribute>
+              <attribute name="MatchReverse">
+                <ProcessValue datatype="flag" value="True" />
+              </attribute>
+            </attributes>
+          </element>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="87" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="12" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="101" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="21" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal" inuse="True">
+              <ProcessValue datatype="number" value="3" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Sign in &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:274,222,238,370" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="Sign in" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="210" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="144" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="5" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="btn_Sign in">
+          <id>4b7ac02f-9d2a-44cc-9e3f-429380fcb13e</id>
+          <type>Button</type>
+          <basetype>Button</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="Sign In" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.BUTTON" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="63" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="79" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="76" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="24" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Sign in &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:248,287,310,323" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="Sign in" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="210" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="144" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="5" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True">
+            <ProcessValue datatype="text" value="Sign in" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="WindowsForms10.Window" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="182" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="182" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="210" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="144" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="5" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:185,208,322,388" />
+          </attribute>
+          <attribute name="Style">
+            <ProcessValue datatype="number" value="382337024" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="Option-Screen">
+        <id>d4e26ce5-4175-49a8-90c9-883350ef5483</id>
+        <element name="txt_Option Number">
+          <id>73be612b-7fdb-4401-8fdf-0826a57a433a</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="97" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="113" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="66" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="21" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Options &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:284,323,339,345" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906560" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="Options" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="297" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="199" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906560" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="btn_Go">
+          <id>8837688d-524f-450f-91d0-d5cae053b0b8</id>
+          <type>Button</type>
+          <basetype>Button</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="Go" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.BUTTON" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="179" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="111" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="100" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="24" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Options &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:364,319,342,463" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="Options" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="182" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="297" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="199" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="Option Number">
+          <id>00e5468c-3be2-46bd-9c4f-91d38e53df44</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="97" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="113" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="66" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="21" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Options &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:169,231,247,230" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906560" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="Options" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="67" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="90" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="297" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="199" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906560" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True">
+            <ProcessValue datatype="text" value="Options" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="WindowsForms10.Window" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="182" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="182" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="297" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="199" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="6" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:185,208,377,475" />
+          </attribute>
+          <attribute name="Style">
+            <ProcessValue datatype="number" value="382337024" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="New Order Screen">
+        <id>219567fc-beb6-4737-80fc-34f36fe286d8</id>
+        <element name="txt_Product Code">
+          <id>a998d09e-338c-40ef-bbcd-3e58ae4ac4ef</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="114" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="9" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="101" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="21" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal" inuse="True">
+              <ProcessValue datatype="number" value="5" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="New Order &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:145,63,79,241" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="New Order" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="299" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="269" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="11" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="txt_Number Required">
+          <id>00edc5e2-fcd9-4708-920b-0f4052d77855</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="114" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="43" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="101" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="21" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal" inuse="True">
+              <ProcessValue datatype="number" value="4" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="New Order &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:145,97,113,241" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="New Order" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="299" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="269" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="11" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="Unit_price">
+          <id>bc6c39c8-2aff-4582-a69a-df9f4252fad7</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="114" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="81" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="101" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="21" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal" inuse="True">
+              <ProcessValue datatype="number" value="3" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="New Order &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:145,135,151,241" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="New Order" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="299" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="269" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="11" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="txt_Cost centre">
+          <id>547860a7-3929-40f9-8dbe-0ff3fc6149ee</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.EDIT" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="114" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="118" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="101" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="21" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="New Order &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:145,172,188,241" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="New Order" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="299" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="269" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="11" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906304" />
+            </attribute>
+            <attribute name="MatchIndex" inuse="True">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="btn_Submit Order">
+          <id>c333eae9-0699-400e-835d-546f660327d0</id>
+          <type>Button</type>
+          <basetype>Button</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="Submit order" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.BUTTON" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="93" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="198" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="76" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="24" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal" inuse="True">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="New Order &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:122,250,273,197" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="New Order" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="299" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="269" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="11" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True">
+            <ProcessValue datatype="text" value="New Order" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="WindowsForms10.Window" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="26" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="26" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="299" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="269" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="11" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:29,52,291,321" />
+          </attribute>
+          <attribute name="Style">
+            <ProcessValue datatype="number" value="382337024" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="Order Confirmation Screen">
+        <id>37a61306-c352-4e36-9ded-1d4c8d5bdc04</id>
+        <element name="Reference-Number">
+          <id>88f32432-95e5-44a7-a5c0-b4e96df8b36a</id>
+          <type>Label</type>
+          <basetype>Label</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" comparisontype="Wildcard" inuse="True">
+              <ProcessValue datatype="text" value="Please take note of your order reference:*" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.STATIC" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="24" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="34" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="222" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="14" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Order Confirmation &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:79,112,125,300" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442840589" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="Order Confirmation" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="52" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="52" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="299" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="155" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442840589" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="btn_continue">
+          <id>399873dc-e778-44a4-879b-f6d0528d8f1b</id>
+          <type>Button</type>
+          <basetype>Button</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="Continue" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="WindowsForms10.BUTTON" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="104" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="89" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="76" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="24" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Order Confirmation &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:159,167,190,234" />
+            </attribute>
+            <attribute name="Style">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="Order Confirmation" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="WindowsForms10.Window" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="52" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="52" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="299" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="155" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="pStyle">
+              <ProcessValue datatype="number" value="1442906123" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True">
+            <ProcessValue datatype="text" value="Order Confirmation" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="WindowsForms10.Window" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="52" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="52" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="299" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="155" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="2" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:55,78,203,347" />
+          </attribute>
+          <attribute name="Style">
+            <ProcessValue datatype="number" value="382337024" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Launch</id>
+      <parameters>
+        <parameter>
+          <name>Path</name>
+          <value>C:\Users\robiu\OneDrive\Desktop\BluePrism\CloudFoundation-2nd Set Video\BluePrism\Training Order System\TrainingOrderSystem.exe</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>WorkingDirectory</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+        <parameter>
+          <name>Options</name>
+          <value>
+          </value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="0ab5d4b6-bcb1-48c9-8913-e62d4f72662c" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b5b6dfa1-77f5-433d-a41a-c333debafafd" type="Normal" published="True">
+    <name>Launch</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="a853ae00-936e-47b3-9172-f0ed72f1dfc1" type="Normal" published="True">
+    <name>Sign in</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="6c29ca21-79af-417c-8905-d747beb4c160" type="Normal" published="True">
+    <name>Options</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="fa49faeb-f4c6-4f48-9f34-1ff25bbb0277" type="Normal" published="True">
+    <name>New Order</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="7a515419-e4f7-4417-aacf-590490d1e15e" type="Normal" published="True">
+    <name>Order Confirmation</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="4b1fc9a5-8ec9-4a1a-a014-0393ec64dcaa" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>6bcaa625-7f23-470e-9aa7-23fbda1dbc32</onsuccess>
+  </stage>
+  <stage stageid="6bcaa625-7f23-470e-9aa7-23fbda1dbc32" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="bbc50000-634f-441d-9508-f97204a42e76" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="86502c51-ff69-4a70-80e8-9c9e247134e6" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>0ab5d4b6-bcb1-48c9-8913-e62d4f72662c</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="10fac76f-0af0-4ccc-b5a6-cc83dc6c3816" name="Start" type="Start">
+    <subsheetid>0ab5d4b6-bcb1-48c9-8913-e62d4f72662c</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>524eaeb0-6734-4d4d-88a5-0177c0768c1e</onsuccess>
+  </stage>
+  <stage stageid="524eaeb0-6734-4d4d-88a5-0177c0768c1e" name="End" type="End">
+    <subsheetid>0ab5d4b6-bcb1-48c9-8913-e62d4f72662c</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="236ca416-fa85-4bd4-a640-6c5788798984" name="Launch" type="SubSheetInfo">
+    <subsheetid>b5b6dfa1-77f5-433d-a41a-c333debafafd</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="2645d41f-248b-43b5-bfda-fe4a39727e1d" name="Start" type="Start">
+    <subsheetid>b5b6dfa1-77f5-433d-a41a-c333debafafd</subsheetid>
+    <loginhibit />
+    <display x="15" y="-135" />
+    <onsuccess>63b730ad-13aa-4788-be65-103950286eb9</onsuccess>
+  </stage>
+  <stage stageid="0c322d69-afb1-46e3-9b25-1eeacbca33e0" name="End" type="End">
+    <subsheetid>b5b6dfa1-77f5-433d-a41a-c333debafafd</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="2d7f88dc-1a9e-42a7-8465-3b42f27bea49" name="" type="Note">
+    <subsheetid>0ab5d4b6-bcb1-48c9-8913-e62d4f72662c</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="455fad9a-1c0b-431f-a2e8-627341824942" name="" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="63b730ad-13aa-4788-be65-103950286eb9" name="Launch Tools" type="Navigate">
+    <subsheetid>b5b6dfa1-77f5-433d-a41a-c333debafafd</subsheetid>
+    <loginhibit />
+    <display x="15" y="-75" />
+    <onsuccess>a7e85716-158a-4a4c-a8f4-5d5cf5cbe043</onsuccess>
+    <step>
+      <element id="54d7169f-e6a5-4e65-a929-69c7aa37d726" />
+      <action>
+        <id>Launch</id>
+        <arguments>
+          <argument>
+            <id>Path</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>CommandLineParams</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WorkingDirectory</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>NonInvasive</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessMode</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>Options</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="089a1999-cc5b-4650-876f-8936fa34b78f" name="Time Out1" type="WaitEnd">
+    <subsheetid>b5b6dfa1-77f5-433d-a41a-c333debafafd</subsheetid>
+    <loginhibit />
+    <display x="105" y="0" w="30" h="30" />
+    <onsuccess>63ffc7cc-94af-46b1-8b08-a1455f4d3d65</onsuccess>
+    <groupid>d1e57960-9f4f-4615-b97f-b6299f53b289</groupid>
+  </stage>
+  <stage stageid="a7e85716-158a-4a4c-a8f4-5d5cf5cbe043" name="Wait1" type="WaitStart">
+    <subsheetid>b5b6dfa1-77f5-433d-a41a-c333debafafd</subsheetid>
+    <loginhibit />
+    <display x="-45" y="0" w="30" h="30" />
+    <groupid>d1e57960-9f4f-4615-b97f-b6299f53b289</groupid>
+    <choices>
+      <choice reply="True">
+        <name>Sign-in Screen Check Exists</name>
+        <distance>75</distance>
+        <ontrue>0c322d69-afb1-46e3-9b25-1eeacbca33e0</ontrue>
+        <element id="54af8d1b-6d95-445e-bbce-5d1680e587e1" />
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="63ffc7cc-94af-46b1-8b08-a1455f4d3d65" name="Sign in Screen available" type="Exception">
+    <subsheetid>b5b6dfa1-77f5-433d-a41a-c333debafafd</subsheetid>
+    <display x="210" y="0" />
+    <exception localized="yes" type="System Error" detail="&quot;Sign in screen not available&quot;" />
+  </stage>
+  <stage stageid="60af0e03-d576-40eb-82cb-49f810bb5e74" name="Sign in" type="SubSheetInfo">
+    <subsheetid>a853ae00-936e-47b3-9172-f0ed72f1dfc1</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="9c3cf253-af72-40cc-b728-bb0bd95fe04f" name="Start" type="Start">
+    <subsheetid>a853ae00-936e-47b3-9172-f0ed72f1dfc1</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>c188960b-5740-42aa-8e49-30e3e50025d9</onsuccess>
+  </stage>
+  <stage stageid="0f70a650-2d16-441f-afef-ff131d34c87a" name="End" type="End">
+    <subsheetid>a853ae00-936e-47b3-9172-f0ed72f1dfc1</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="c188960b-5740-42aa-8e49-30e3e50025d9" name="Wait Sign in Information" type="Write">
+    <subsheetid>a853ae00-936e-47b3-9172-f0ed72f1dfc1</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" />
+    <onsuccess>20670086-ab69-4ac2-afb0-2e3162fc759a</onsuccess>
+    <step expr="&quot;user&quot;">
+      <element id="901ed2fd-ed61-4199-b92b-efd4878c668e" />
+    </step>
+    <step expr="&quot;user&quot;">
+      <element id="08af9821-b5d3-4fc0-b772-7d5f2e8a2b4a" />
+    </step>
+  </stage>
+  <stage stageid="20670086-ab69-4ac2-afb0-2e3162fc759a" name="Click Sign In" type="Navigate">
+    <subsheetid>a853ae00-936e-47b3-9172-f0ed72f1dfc1</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <onsuccess>0f70a650-2d16-441f-afef-ff131d34c87a</onsuccess>
+    <step>
+      <element id="4b7ac02f-9d2a-44cc-9e3f-429380fcb13e" />
+      <action>
+        <id>Press</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="433d3099-f94c-49f9-bde1-d9e2b83de8b4" name="Options" type="SubSheetInfo">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="8976bcde-c673-484d-9218-9a18b63613c3" name="Start" type="Start">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>a85e7b9c-f2dd-43b2-bd29-37ceb670bd35</onsuccess>
+  </stage>
+  <stage stageid="8c4dc49c-34fe-4169-858c-107ab1ed34e6" name="End" type="End">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="15" y="165" />
+  </stage>
+  <stage stageid="bd5615e2-964c-43ee-929d-5ea4807bb5c0" name="Input Option" type="Write">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="135" y="45" />
+    <onsuccess>33efd0da-d8cf-4330-b96b-6eb9e1fdfe18</onsuccess>
+    <step expr="&quot;1&quot;">
+      <element id="73be612b-7fdb-4401-8fdf-0826a57a433a" />
+    </step>
+  </stage>
+  <stage stageid="33efd0da-d8cf-4330-b96b-6eb9e1fdfe18" name="Click Go" type="Navigate" interval="1">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="15" y="105" />
+    <onsuccess>8c4dc49c-34fe-4169-858c-107ab1ed34e6</onsuccess>
+    <step>
+      <element id="8837688d-524f-450f-91d0-d5cae053b0b8" />
+      <action>
+        <id>Press</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="b81b6118-08f7-43bd-b63c-ade650f91e81" name="Time Out2" type="WaitEnd">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="90" y="-45" w="30" h="30" />
+    <onsuccess>ae825dee-0e0c-4d08-9362-91e65e6fc96a</onsuccess>
+    <groupid>7a31cd9c-517b-4243-83a2-b82f502f5c40</groupid>
+  </stage>
+  <stage stageid="a85e7b9c-f2dd-43b2-bd29-37ceb670bd35" name="Wait2" type="WaitStart">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="-45" y="-45" w="30" h="30" />
+    <groupid>7a31cd9c-517b-4243-83a2-b82f502f5c40</groupid>
+    <choices>
+      <choice reply="True">
+        <name>Option-Screen Check Exists</name>
+        <distance>67.5</distance>
+        <ontrue>6eea7003-de25-4a38-9970-646a20aada4f</ontrue>
+        <element id="d4e26ce5-4175-49a8-90c9-883350ef5483" />
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="ae825dee-0e0c-4d08-9362-91e65e6fc96a" name="Option Screen not exist" type="Exception">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <display x="180" y="-45" />
+    <exception localized="yes" type="system Error" detail="&quot;OPtion screen is not available&quot;" />
+  </stage>
+  <stage stageid="82c0605c-a539-4ef7-bd7e-e6050e8b9deb" name="New Order" type="SubSheetInfo">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="087b90f4-3c08-4423-9e71-e89366add023" name="Start" type="Start">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <loginhibit />
+    <display x="30" y="-135" />
+    <inputs>
+      <input type="collection" name="Order Collection" stage="Orders" />
+    </inputs>
+    <onsuccess>f1274dd9-6263-484c-9b14-735e500913db</onsuccess>
+  </stage>
+  <stage stageid="390c192b-c318-4d0a-859b-db41d88d1535" name="End" type="End">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <loginhibit />
+    <display x="15" y="150" />
+    <outputs>
+      <output type="text" name="Output Order Ref" stage="Order Ref" />
+    </outputs>
+  </stage>
+  <stage stageid="527d772d-ad95-4c2a-ab3b-6c3e3d9261ff" name="Time Out3" type="WaitEnd">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <loginhibit />
+    <display x="75" y="-60" w="30" h="30" />
+    <onsuccess>ee1d0396-bef0-4da1-a20b-e37a130c29ed</onsuccess>
+    <groupid>69c6475c-29d9-48ce-b9f2-988140f0a4ef</groupid>
+  </stage>
+  <stage stageid="f1274dd9-6263-484c-9b14-735e500913db" name="Wait3" type="WaitStart">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <loginhibit />
+    <display x="-45" y="-60" w="30" h="30" />
+    <groupid>69c6475c-29d9-48ce-b9f2-988140f0a4ef</groupid>
+    <choices>
+      <choice reply="True">
+        <name>New Order Screen Check Exists</name>
+        <distance>60</distance>
+        <ontrue>28c131a1-10bb-424d-aedb-f4d87099e33a</ontrue>
+        <element id="219567fc-beb6-4737-80fc-34f36fe286d8" />
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="28c131a1-10bb-424d-aedb-f4d87099e33a" name="Enter Order Numebr" type="Write">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <onsuccess>0817f189-db94-4195-af19-3f8ccd34c0d2</onsuccess>
+    <step expr="[Orders.Product Code]">
+      <element id="a998d09e-338c-40ef-bbcd-3e58ae4ac4ef" />
+    </step>
+    <step expr="[Orders.Quantity]">
+      <element id="00edc5e2-fcd9-4708-920b-0f4052d77855" />
+    </step>
+    <step expr="[Orders.Unit Price]">
+      <element id="bc6c39c8-2aff-4582-a69a-df9f4252fad7" />
+    </step>
+    <step expr="[Orders.Cost Centre]">
+      <element id="547860a7-3929-40f9-8dbe-0ff3fc6149ee" />
+    </step>
+  </stage>
+  <stage stageid="259fd846-552d-4709-b230-26272bbc34c5" name="Orders" type="Collection">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <display x="-150" y="-15" />
+    <datatype>collection</datatype>
+    <alwaysinit />
+  </stage>
+  <stage stageid="0817f189-db94-4195-af19-3f8ccd34c0d2" name="Click Submit" type="Navigate">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <loginhibit />
+    <display x="15" y="75" />
+    <onsuccess>390c192b-c318-4d0a-859b-db41d88d1535</onsuccess>
+    <step>
+      <element id="c333eae9-0699-400e-835d-546f660327d0" />
+      <action>
+        <id>Press</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="ee1d0396-bef0-4da1-a20b-e37a130c29ed" name="Exception1" type="Exception">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <display x="180" y="-60" />
+    <exception localized="yes" type="System Exception" detail="&quot;the new order is not available&quot;" />
+  </stage>
+  <stage stageid="2f29ea6a-b44d-446c-9aed-e9f54f3a276d" name="Order Confirmation" type="SubSheetInfo">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="3c4e0ef6-18e2-42f4-a876-8e5a2622d816" name="Start" type="Start">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>453c0f70-5dbf-4358-8cbb-b8471bf2cf2b</onsuccess>
+  </stage>
+  <stage stageid="a57410e0-9e5e-4340-863a-593705f92b5f" name="End" type="End">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <loginhibit />
+    <display x="30" y="165" />
+  </stage>
+  <stage stageid="e5a77a56-4ace-4a5a-ab34-91202769c01d" name="Time Out4" type="WaitEnd">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <loginhibit />
+    <display x="120" y="-45" w="30" h="30" />
+    <onsuccess>758757f2-9711-4876-9109-6d28e2ca0847</onsuccess>
+    <groupid>df497059-8aa0-43d3-bca2-7ade1a7a2d5d</groupid>
+  </stage>
+  <stage stageid="453c0f70-5dbf-4358-8cbb-b8471bf2cf2b" name="Wait4" type="WaitStart">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <loginhibit />
+    <display x="-45" y="-45" w="30" h="30" />
+    <groupid>df497059-8aa0-43d3-bca2-7ade1a7a2d5d</groupid>
+    <choices>
+      <choice reply="True">
+        <name>Order Confirmation Screen Check Exists</name>
+        <distance>82.5</distance>
+        <ontrue>16e23496-2e40-457c-8d96-5cdc4776bb44</ontrue>
+        <element id="37a61306-c352-4e36-9ded-1d4c8d5bdc04" />
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="758757f2-9711-4876-9109-6d28e2ca0847" name="Exception2" type="Exception">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <display x="240" y="-45" />
+    <exception localized="yes" type="System Exception" detail="&quot;The system is not avaiable&quot;" />
+  </stage>
+  <stage stageid="16e23496-2e40-457c-8d96-5cdc4776bb44" name="Read Order Ref" type="Read">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <loginhibit />
+    <display x="30" y="30" />
+    <onsuccess>cb57031b-047a-416c-aa5a-b34c6d1583ac</onsuccess>
+    <step stage="Order Ref">
+      <element id="88f32432-95e5-44a7-a5c0-b4e96df8b36a" />
+      <action>
+        <id>GetWindowText</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="cb57031b-047a-416c-aa5a-b34c6d1583ac" name="Click Continue" type="Navigate">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <loginhibit />
+    <display x="30" y="90" />
+    <onsuccess>a57410e0-9e5e-4340-863a-593705f92b5f</onsuccess>
+    <step>
+      <element id="399873dc-e778-44a4-879b-f6d0528d8f1b" />
+      <action>
+        <id>Press</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="333bbeb0-f400-4e46-ab7a-a13015293e11" name="Order Ref" type="Data">
+    <subsheetid>7a515419-e4f7-4417-aacf-590490d1e15e</subsheetid>
+    <display x="-120" y="45" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5bcd87d7-2e95-49c3-bb1a-5f5434061d8b" name="Order Ref" type="Data">
+    <subsheetid>fa49faeb-f4c6-4f48-9f34-1ff25bbb0277</subsheetid>
+    <display x="-165" y="105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6eea7003-de25-4a38-9970-646a20aada4f" name="Blank Item in the Gap" type="Decision">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <decision expression="[Option Number Exist]&lt;&gt;&quot;&quot;" />
+    <ontrue>bd5615e2-964c-43ee-929d-5ea4807bb5c0</ontrue>
+    <onfalse>33efd0da-d8cf-4330-b96b-6eb9e1fdfe18</onfalse>
+  </stage>
+  <stage stageid="badf80da-3246-4f19-9a6a-331ddb291e98" name="Option Number Exist" type="Data">
+    <subsheetid>6c29ca21-79af-417c-8905-d747beb4c160</subsheetid>
+    <loginhibit />
+    <display x="-195" y="45" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <alwaysinit />
+  </stage>
+</process>
