@@ -1,0 +1,92 @@
+﻿<process name="Find Bigger Value" version="1.0" bpversion="6.10.0.30674" narrative="" byrefcollection="true" preferredid="c0016039-c365-4182-9429-c1433a58ccf7">
+  <view>
+    <camerax>0</camerax>
+    <cameray>105</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="6b24c435-a870-42e2-bb42-c3b14a9a46f1" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>97ede6cd-4513-46c7-b913-8f40c02e4680</onsuccess>
+  </stage>
+  <stage stageid="e903ccf8-7a0f-40b8-b295-8079f352a8bb" name="End" type="End">
+    <display x="15" y="165" />
+  </stage>
+  <stage stageid="d4da21b9-7a29-435f-9d81-ca357558d5ab" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="3f522684-7adb-45e0-a32b-8cb88f0a5a98" name="num1" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="225" y="-90" />
+    <datatype>number</datatype>
+    <initialvalue>10</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a3ceb18f-c387-4e5c-9010-f259452a8a57" name="num2" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="240" y="-30" />
+    <datatype>number</datatype>
+    <initialvalue>20</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="57a5b15e-89df-436d-a115-d320eda37a20" name="Result" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="330" y="-90" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="97ede6cd-4513-46c7-b913-8f40c02e4680" name="IF num1 &gt; num2?? " type="Decision">
+    <display x="15" y="-30" />
+    <decision expression="[num2]&lt;[num1]" />
+    <ontrue>2b94112e-034a-4826-8030-056f33f4cf7b</ontrue>
+    <onfalse>e0a56d2e-9b25-4885-aaaa-544302887b44</onfalse>
+  </stage>
+  <stage stageid="d1628f35-4259-412a-8b51-8f41f07f52dd" name="Calc1" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="45" />
+    <onsuccess>aea5dad0-a424-4ade-ae90-40b10c11d18e</onsuccess>
+    <calculation expression="&quot;Number 1 is greater&quot;&amp;[num1]&amp; &quot;as per the values&quot;&#xA;" stage="Output" />
+  </stage>
+  <stage stageid="68ade247-e007-4007-a295-5d604385522b" name="Calc2" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="45" />
+    <onsuccess>68088ddf-ec68-46c5-ad08-eebec8874380</onsuccess>
+    <calculation expression="&quot;Number 2 is greater&quot; &amp;[num2]&amp; &quot;as per the values&quot;" stage="Output" />
+  </stage>
+  <stage stageid="0471469a-3595-42a7-85a9-b380e1f3260c" name="Output" type="Data">
+    <display x="360" y="-15" w="150" h="90" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aea5dad0-a424-4ade-ae90-40b10c11d18e" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="165" w="10" h="10" />
+    <onsuccess>e903ccf8-7a0f-40b8-b295-8079f352a8bb</onsuccess>
+  </stage>
+  <stage stageid="68088ddf-ec68-46c5-ad08-eebec8874380" name="Anchor2" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="165" w="10" h="10" />
+    <onsuccess>e903ccf8-7a0f-40b8-b295-8079f352a8bb</onsuccess>
+  </stage>
+  <stage stageid="2b94112e-034a-4826-8030-056f33f4cf7b" name="Anchor3" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="-30" w="10" h="10" />
+    <onsuccess>d1628f35-4259-412a-8b51-8f41f07f52dd</onsuccess>
+  </stage>
+  <stage stageid="e0a56d2e-9b25-4885-aaaa-544302887b44" name="Anchor4" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-30" w="10" h="10" />
+    <onsuccess>68ade247-e007-4007-a295-5d604385522b</onsuccess>
+  </stage>
+  <stage stageid="a372d637-822f-4e27-aef2-1846eb989f7a" name="Note1" type="Note">
+    <narrative>Set Value in Num 1 Data item </narrative>
+    <display x="-255" y="60" />
+  </stage>
+</process>

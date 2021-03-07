@@ -1,0 +1,80 @@
+﻿<process name="CalculationSum" version="1.0" bpversion="6.10.0.30674" narrative="The process has been created to pracrtice the sum of numbers." byrefcollection="true" preferredid="852ec869-cb41-439f-b495-20a9bf26dad0">
+  <view>
+    <camerax>0</camerax>
+    <cameray>63</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="caccba0c-1502-497e-9e18-33d8b0d06e48" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>1297d3fc-34f9-49d3-9073-b937b273d240</onsuccess>
+  </stage>
+  <stage stageid="82a3da51-6304-4093-a3c1-0c80d816dc9c" name="End" type="End">
+    <display x="15" y="150" />
+  </stage>
+  <stage stageid="f3026ceb-9218-4e05-84d6-d84c902d4e0c" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="306d9a92-2cd0-4eb9-b0c9-8dff527eb789" name="Coll1" type="Collection">
+    <display x="360" y="-30" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Item ID" type="text" />
+      <field name="Order Quantity" type="number" />
+      <field name="Order Date" type="date" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="Item ID" type="text" value="1111" />
+        <field name="Order Quantity" type="number" value="4" />
+        <field name="Order Date" type="date" value="2021/03/02" />
+      </row>
+      <row>
+        <field name="Item ID" type="text" value="1112" />
+        <field name="Order Quantity" type="number" value="6" />
+        <field name="Order Date" type="date" value="2021/03/02" />
+      </row>
+      <row>
+        <field name="Item ID" type="text" value="1113" />
+        <field name="Order Quantity" type="number" value="10" />
+        <field name="Order Date" type="date" value="2021/03/02" />
+      </row>
+      <row>
+        <field name="Item ID" type="text" value="1114" />
+        <field name="Order Quantity" type="number" value="2" />
+        <field name="Order Date" type="date" value="2021/03/02" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="1297d3fc-34f9-49d3-9073-b937b273d240" name="Loop Start1" type="LoopStart">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>9decb3e4-7597-462b-9d41-5b76bed75d3c</onsuccess>
+    <groupid>b1ed2fee-bfd9-4ab9-b414-93fcf6d5f018</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Coll1</loopdata>
+  </stage>
+  <stage stageid="30eafd03-f640-44f9-85a5-79c8f7af9b2d" name="Loop End1" type="LoopEnd">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <onsuccess>82a3da51-6304-4093-a3c1-0c80d816dc9c</onsuccess>
+    <groupid>b1ed2fee-bfd9-4ab9-b414-93fcf6d5f018</groupid>
+  </stage>
+  <stage stageid="f5030633-a824-4d04-ab6e-2610048d18eb" name="Total Quantity" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="375" y="45" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9decb3e4-7597-462b-9d41-5b76bed75d3c" name="Count Total Quanityt" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>30eafd03-f640-44f9-85a5-79c8f7af9b2d</onsuccess>
+    <calculation expression="[Total Quantity]+[Coll1.Order Quantity] " stage="Total Quantity" />
+  </stage>
+</process>

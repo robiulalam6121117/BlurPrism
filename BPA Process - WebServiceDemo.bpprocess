@@ -1,0 +1,25 @@
+﻿<process name="WebServiceDemo" version="1.0" bpversion="6.10.0.30674" narrative="" byrefcollection="true" preferredid="76994d83-86f4-474e-96d9-670279bcca1f">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="5db26e2b-d26f-4e80-8776-5ee913053519" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>3db471df-02ae-40c7-a1d4-faf5a1c714a3</onsuccess>
+  </stage>
+  <stage stageid="c2be25e2-86e8-4403-b0e8-62ba0609e211" name="End" type="End">
+    <display x="15" y="45" />
+  </stage>
+  <stage stageid="f69b9649-5bdb-4f48-9a12-b572056893b0" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="3db471df-02ae-40c7-a1d4-faf5a1c714a3" name="Action1" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>c2be25e2-86e8-4403-b0e8-62ba0609e211</onsuccess>
+    <resource object="" action="" />
+  </stage>
+</process>

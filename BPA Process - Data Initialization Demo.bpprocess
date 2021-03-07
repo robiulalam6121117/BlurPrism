@@ -1,0 +1,76 @@
+﻿<process name="Data Initialization Demo" version="1.0" bpversion="6.10.0.30674" narrative="" byrefcollection="true" preferredid="e1980ce4-27a5-4e4c-9b0b-84a3f7db8e35">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="b6b4e8ce-8069-446d-9ff5-1bf2965137db" type="Normal" published="False">
+    <name>SubPage</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="ae0590d2-ad36-46bd-80d7-b641098a55a2" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>dcfe1405-0e0f-4949-b7f2-32c4bc700668</onsuccess>
+  </stage>
+  <stage stageid="2909bbd6-33b4-4669-84ab-f1f25d81ebf4" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="d0f3669a-b9ce-4d27-8192-473061137172" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="aa832a47-2dfc-4a66-9e57-68ca62ba827e" name="SubPage" type="SubSheetInfo">
+    <subsheetid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="55b7818d-0356-4018-84a4-d5e553203c27" name="Start" type="Start">
+    <subsheetid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>d4ee5e5e-63fb-4b98-9a07-ba339e83c08b</onsuccess>
+  </stage>
+  <stage stageid="d28ddc3a-deaa-48e7-996e-3c8574882388" name="End" type="End">
+    <subsheetid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="d4ee5e5e-63fb-4b98-9a07-ba339e83c08b" name="Calc2" type="Calculation">
+    <subsheetid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>d28ddc3a-deaa-48e7-996e-3c8574882388</onsuccess>
+    <calculation expression="[Result] + [Num1]" stage="Result" />
+  </stage>
+  <stage stageid="1cce0bf5-3c1b-4bdc-acef-370f13003e1f" name="Num1" type="Data">
+    <subsheetid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="210" y="-45" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1caafd69-8056-424e-924d-c087b4c54a43" name="Result" type="Data">
+    <subsheetid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="195" y="30" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+  </stage>
+  <stage stageid="dcfe1405-0e0f-4949-b7f2-32c4bc700668" name="SubPage" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>40aa27b2-e17b-4c01-bee2-b17376df3f54</onsuccess>
+    <processid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</processid>
+  </stage>
+  <stage stageid="40aa27b2-e17b-4c01-bee2-b17376df3f54" name="SubPage" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <onsuccess>2909bbd6-33b4-4669-84ab-f1f25d81ebf4</onsuccess>
+    <processid>b6b4e8ce-8069-446d-9ff5-1bf2965137db</processid>
+  </stage>
+</process>

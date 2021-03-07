@@ -1,0 +1,158 @@
+﻿<process name="Training of Process Object" version="1.0" bpversion="6.10.0.30674" narrative="" byrefcollection="true" preferredid="4cc9cd24-2955-411b-9962-c0788702a76c">
+  <view>
+    <camerax>0</camerax>
+    <cameray>-21</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="463f0c64-5915-4dc1-9f22-ea196144aed4" type="Normal" published="False">
+    <name>Read Orders Data</name>
+    <view>
+      <camerax>206</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="10bc9e15-ecca-49d9-84ed-27a06dfff17c" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>e808aaeb-7063-46e6-b55d-2f1b1b8159f7</onsuccess>
+  </stage>
+  <stage stageid="d6ef1fcc-be37-49e7-a2f2-b0cb025a0030" name="End" type="End">
+    <display x="15" y="375" />
+  </stage>
+  <stage stageid="ad7b6724-4f0c-443a-8521-131cfc885b66" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="be4b30d4-a464-4f65-b804-abd867480ed5" name="Sign In " type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>a8737a27-0eb9-40cf-a6a2-7a90dda763d9</onsuccess>
+    <resource object="Training of Object" action="Sign In " />
+  </stage>
+  <stage stageid="02f3e0e5-9849-425d-a565-05082da3928d" name="Option Screen" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="135" />
+    <onsuccess>4ab05334-b337-4b12-a9ea-e106efd0b0ca</onsuccess>
+    <resource object="Training of Object" action="Option Screen" />
+  </stage>
+  <stage stageid="4ab05334-b337-4b12-a9ea-e106efd0b0ca" name="New Orders" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="195" />
+    <onsuccess>3e06d336-22a8-42ac-a6b3-0885c2cd176a</onsuccess>
+    <resource object="Training of Object" action="New Orders" />
+  </stage>
+  <stage stageid="3e06d336-22a8-42ac-a6b3-0885c2cd176a" name="Order Confirmation" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="255" />
+    <onsuccess>aa55717e-7e94-47f1-8765-a9918d363970</onsuccess>
+    <resource object="Training of Object" action="Order Confirmation Page" />
+  </stage>
+  <stage stageid="a8737a27-0eb9-40cf-a6a2-7a90dda763d9" name="Loop Start1" type="LoopStart">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <onsuccess>02f3e0e5-9849-425d-a565-05082da3928d</onsuccess>
+    <groupid>3953b5db-4219-48c0-87ad-7759fdc09447</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>OrdersDetails</loopdata>
+  </stage>
+  <stage stageid="aa55717e-7e94-47f1-8765-a9918d363970" name="Loop End1" type="LoopEnd">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="315" />
+    <onsuccess>d6ef1fcc-be37-49e7-a2f2-b0cb025a0030</onsuccess>
+    <groupid>3953b5db-4219-48c0-87ad-7759fdc09447</groupid>
+  </stage>
+  <stage stageid="ca2e043a-28f5-46a5-8a6f-56dcaa493d76" name="Read Orders Data" type="SubSheetInfo">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="d271f2af-ece6-401e-a627-f1c350154772" name="Start" type="Start">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <display x="210" y="-135" />
+    <onsuccess>648a5c99-4d04-4ab8-9d56-6bd334781353</onsuccess>
+  </stage>
+  <stage stageid="a1013ab1-5033-40b8-b6f2-4b449ef0845f" name="End" type="End">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <display x="210" y="195" />
+  </stage>
+  <stage stageid="648a5c99-4d04-4ab8-9d56-6bd334781353" name="Create Instance" type="Action">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <display x="210" y="-75" />
+    <inputs>
+      <input type="flag" name="Enable Events" friendlyname="Enable Events" narrative="Flag to indicate that events should be enabled / disabled on the attached instance - defaulted to True" expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="handle" friendlyname="handle" narrative="An integer which can be used to identify the created instance in subsequent actions" stage="handle" />
+    </outputs>
+    <onsuccess>4cf5a309-8244-4076-8f9b-bda22cbf4df2</onsuccess>
+    <resource object="MS Excel VBO" action="Create Instance" />
+  </stage>
+  <stage stageid="f19e84d0-f0d8-47eb-bf55-8189340350b7" name="handle" type="Data">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <display x="330" y="-90" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4cf5a309-8244-4076-8f9b-bda22cbf4df2" name="Open Order CSV" type="Action">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="210" y="-15" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the required workbook should be opened. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="File name" friendlyname="File name" narrative="The path and name of the file which should be opened." expr="&quot;C:\Users\robiu\Downloads\Orders.xlsx&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name used by Excel to identify the workbook - usually this is the file name (without the path)." stage="" />
+    </outputs>
+    <onsuccess>aff96d0d-eab0-4c08-bb7c-458c644cdfe2</onsuccess>
+    <resource object="MS Excel VBO" action="Open Workbook" />
+  </stage>
+  <stage stageid="aff96d0d-eab0-4c08-bb7c-458c644cdfe2" name="Read Orders Data" type="Action">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="210" y="45" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the worksheet which should be retrieved resides. The default of zero indicates the currently active instance." expr="" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook which contains the sheet required. The default empty text indicates the currently active workbook on the specified instance." expr="" />
+      <input type="text" name="Worksheet Name" friendlyname="Worksheet Name" narrative="The name of the worksheet within the specified workbook which should be written to a collection. The default empty text indicates the currently active worksheet within the specified workbook." expr="" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Data" friendlyname="Data" narrative="The collection containing the data from the specified worksheet - the column IDs will be gleaned from the first row on the sheet being retrieved." stage="OrdersDetails" />
+    </outputs>
+    <onsuccess>ecd4d9f8-4a12-45c5-ac32-f7f797116624</onsuccess>
+    <resource object="MS Excel VBO" action="Get Worksheet As Collection" />
+  </stage>
+  <stage stageid="a1fbbb22-4164-430f-a415-da299cd1d992" name="OrdersDetails" type="Collection">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <display x="330" y="-30" />
+    <datatype>collection</datatype>
+    <alwaysinit />
+  </stage>
+  <stage stageid="ecd4d9f8-4a12-45c5-ac32-f7f797116624" name="Close WorkBoook" type="Action">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <display x="210" y="120" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance to be closed. Zero indicates the currently active instance." expr="[handle]" />
+      <input type="flag" name="Save Changes" friendlyname="Save Changes" narrative="True to save the changes to the open workbooks on the instance, False to discard any changes. Default is False." expr="True" />
+    </inputs>
+    <onsuccess>a1013ab1-5033-40b8-b6f2-4b449ef0845f</onsuccess>
+    <resource object="MS Excel VBO" action="Close Instance" />
+  </stage>
+  <stage stageid="6c047470-342e-4e0e-b867-b0ec720a467b" name="Instance Number" type="Data">
+    <subsheetid>463f0c64-5915-4dc1-9f22-ea196144aed4</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="330" y="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e808aaeb-7063-46e6-b55d-2f1b1b8159f7" name="Read Orders Data" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>be4b30d4-a464-4f65-b804-abd867480ed5</onsuccess>
+    <processid>463f0c64-5915-4dc1-9f22-ea196144aed4</processid>
+  </stage>
+</process>

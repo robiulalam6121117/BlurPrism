@@ -1,0 +1,100 @@
+﻿<process name="Circular Path Demo" version="1.0" bpversion="6.10.0.30674" narrative="" byrefcollection="true" preferredid="88fe619f-7cce-46cd-a7c4-ba902414c3f5">
+  <view>
+    <camerax>0</camerax>
+    <cameray>84</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="beebc62e-d4f8-4da5-9a92-ab7a544a9716" type="Normal" published="False">
+    <name>Looping Logic</name>
+    <view>
+      <camerax>15</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="25a0704a-2f98-493f-88b3-da10fa128231" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>4d24754e-a7e6-43ee-baad-cca2384e1d0c</onsuccess>
+  </stage>
+  <stage stageid="e021d940-ea25-418d-a259-e776f0053745" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="b1e5d0c4-5562-4458-9e13-d2bc13b25589" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="ed5ffb93-a7bc-45fd-bc49-4f5bea003f88" name="Counter" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="-90" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="cfaa50be-a16b-4d89-a5d6-4865aa2616d3" name="Max Count" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="-15" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="344bd089-6774-4d58-9eae-413c067606ea" name="Looping Logic" type="SubSheetInfo">
+    <subsheetid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="17c83787-6b71-41c5-ab6f-ad5ebf0cc97e" name="Start" type="Start">
+    <subsheetid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>dd5aaea1-e578-4f15-b74d-4cefc07a61e0</onsuccess>
+  </stage>
+  <stage stageid="67c52e2c-32c6-4fdc-b283-4211a519cb0b" name="End" type="End">
+    <subsheetid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</subsheetid>
+    <display x="15" y="150" />
+  </stage>
+  <stage stageid="dd5aaea1-e578-4f15-b74d-4cefc07a61e0" name="Increment Counter" type="Calculation">
+    <subsheetid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>ca0313b1-0630-42f1-9481-457f9d1cc1be</onsuccess>
+    <calculation expression="[Counter]+3" stage="Counter" />
+  </stage>
+  <stage stageid="ca0313b1-0630-42f1-9481-457f9d1cc1be" name="Decision1" type="Decision">
+    <subsheetid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</subsheetid>
+    <display x="15" y="60" />
+    <decision expression="[Counter] &lt;[Max Count]" />
+    <ontrue>1769b675-f8b6-4e18-833d-2765ee599352</ontrue>
+    <onfalse>67c52e2c-32c6-4fdc-b283-4211a519cb0b</onfalse>
+  </stage>
+  <stage stageid="1769b675-f8b6-4e18-833d-2765ee599352" name="Anchor1" type="Anchor">
+    <subsheetid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="120" y="60" w="10" h="10" />
+    <onsuccess>07f05799-ade9-4f78-8c41-6869870703b8</onsuccess>
+  </stage>
+  <stage stageid="07f05799-ade9-4f78-8c41-6869870703b8" name="Anchor2" type="Anchor">
+    <subsheetid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="120" y="-30" w="10" h="10" />
+    <onsuccess>dd5aaea1-e578-4f15-b74d-4cefc07a61e0</onsuccess>
+  </stage>
+  <stage stageid="9c807fc5-ac97-45c4-ab2d-1c1d04600ce2" name="Looping Logic" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <onsuccess>e021d940-ea25-418d-a259-e776f0053745</onsuccess>
+    <processid>beebc62e-d4f8-4da5-9a92-ab7a544a9716</processid>
+  </stage>
+  <stage stageid="4d24754e-a7e6-43ee-baad-cca2384e1d0c" name="Calc1" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>9c807fc5-ac97-45c4-ab2d-1c1d04600ce2</onsuccess>
+    <calculation expression="&quot;this is the testing purpose in the calculation page&quot;" stage="Message" />
+  </stage>
+  <stage stageid="7206ffee-416e-4187-b7b3-6199a586f8cd" name="Message" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="360" y="-60" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

@@ -1,0 +1,87 @@
+﻿<process name="Read Excel Data" version="1.0" bpversion="6.10.0.30674" narrative="" byrefcollection="true" preferredid="4155d468-7c7b-4d20-a2be-5d91ddfe71b2">
+  <view>
+    <camerax>0</camerax>
+    <cameray>126</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="12ab88c6-0c68-433c-ae61-d9e82716dd3f" name="Start" type="Start">
+    <display x="0" y="-60" />
+    <onsuccess>62a66c04-bbbe-44d9-a893-f122a988ca3f</onsuccess>
+  </stage>
+  <stage stageid="48535eac-afa8-4003-af52-9bf6894888df" name="End" type="End">
+    <display x="0" y="270" />
+  </stage>
+  <stage stageid="63bed998-dcce-46a2-83e4-70435e3ed0af" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="62a66c04-bbbe-44d9-a893-f122a988ca3f" name="Create Instance" type="Action">
+    <display x="0" y="0" />
+    <inputs>
+      <input type="flag" name="Enable Events" friendlyname="Enable Events" narrative="Flag to indicate that events should be enabled / disabled on the attached instance - defaulted to True" expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="handle" friendlyname="handle" narrative="An integer which can be used to identify the created instance in subsequent actions" stage="handle" />
+    </outputs>
+    <onsuccess>8c9682f2-f9ce-45d2-9656-7732bdf9653e</onsuccess>
+    <resource object="MS Excel VBO" action="Create Instance" />
+  </stage>
+  <stage stageid="fd073858-0984-4893-a9cb-3491e819dc35" name="handle" type="Data">
+    <display x="120" y="-15" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8c9682f2-f9ce-45d2-9656-7732bdf9653e" name="Open Order CSV" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="60" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the required workbook should be opened. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="File name" friendlyname="File name" narrative="The path and name of the file which should be opened." expr="&quot;C:\Users\robiu\Downloads\Orders.xlsx&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name used by Excel to identify the workbook - usually this is the file name (without the path)." stage="" />
+    </outputs>
+    <onsuccess>db032f90-857d-42bd-bc9a-06c494438a6f</onsuccess>
+    <resource object="MS Excel VBO" action="Open Workbook" />
+  </stage>
+  <stage stageid="db032f90-857d-42bd-bc9a-06c494438a6f" name="Read Orders Data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="120" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the worksheet which should be retrieved resides. The default of zero indicates the currently active instance." expr="" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook which contains the sheet required. The default empty text indicates the currently active workbook on the specified instance." expr="" />
+      <input type="text" name="Worksheet Name" friendlyname="Worksheet Name" narrative="The name of the worksheet within the specified workbook which should be written to a collection. The default empty text indicates the currently active worksheet within the specified workbook." expr="" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Data" friendlyname="Data" narrative="The collection containing the data from the specified worksheet - the column IDs will be gleaned from the first row on the sheet being retrieved." stage="OrdersDetails" />
+    </outputs>
+    <onsuccess>668fc734-10f2-4c7d-8f1d-31fc61905bd6</onsuccess>
+    <resource object="MS Excel VBO" action="Get Worksheet As Collection" />
+  </stage>
+  <stage stageid="13ff2de3-cbbb-480d-b624-e0019da9c048" name="OrdersDetails" type="Collection">
+    <display x="120" y="45" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="668fc734-10f2-4c7d-8f1d-31fc61905bd6" name="Close WorkBoook" type="Action">
+    <display x="0" y="195" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance to be closed. Zero indicates the currently active instance." expr="[handle]" />
+      <input type="flag" name="Save Changes" friendlyname="Save Changes" narrative="True to save the changes to the open workbooks on the instance, False to discard any changes. Default is False." expr="True" />
+    </inputs>
+    <onsuccess>48535eac-afa8-4003-af52-9bf6894888df</onsuccess>
+    <resource object="MS Excel VBO" action="Close Instance" />
+  </stage>
+  <stage stageid="5ab971aa-e6c0-4e1a-90fc-f094f283741e" name="Instance Number" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="120" y="105" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

@@ -1,0 +1,54 @@
+﻿<process name="Session Variable" version="1.0" bpversion="6.10.0.30674" narrative="" byrefcollection="true" preferredid="6770bc12-6f02-487b-ab5d-23546dfd26df" published="true">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="76141c7c-71f1-4a0b-a266-34fc9a79d35f" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>5f8fe352-2121-4ef2-89bd-73dc883704a6</onsuccess>
+  </stage>
+  <stage stageid="329b7952-b294-43aa-aee9-918db9da5628" name="End" type="End">
+    <display x="15" y="105" />
+  </stage>
+  <stage stageid="4466dc87-3ce0-4637-b800-9586963b9e44" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="5f8fe352-2121-4ef2-89bd-73dc883704a6" name="Decision1" type="Decision">
+    <display x="15" y="-15" />
+    <decision expression="[Counter] = 100" />
+    <ontrue>329b7952-b294-43aa-aee9-918db9da5628</ontrue>
+    <onfalse>8f036690-ce9d-4e97-be41-ee8d16ff315d</onfalse>
+  </stage>
+  <stage stageid="5926a77c-df27-4132-a92b-6862a66aab51" name="Counter" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="-135" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <exposure>Session</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8f036690-ce9d-4e97-be41-ee8d16ff315d" name="Increment Counter" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="165" y="-15" />
+    <onsuccess>297eb5ae-a179-4709-8a11-27602790f82d</onsuccess>
+    <calculation expression="[Counter] + 1" stage="Counter" />
+  </stage>
+  <stage stageid="297eb5ae-a179-4709-8a11-27602790f82d" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="165" y="-75" w="10" h="10" />
+    <onsuccess>ee7c4032-04d6-455c-bc4e-372b468d1e61</onsuccess>
+  </stage>
+  <stage stageid="ee7c4032-04d6-455c-bc4e-372b468d1e61" name="Sleep" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="90" y="-60" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" friendlyname="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="3" />
+    </inputs>
+    <onsuccess>5f8fe352-2121-4ef2-89bd-73dc883704a6</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+</process>
